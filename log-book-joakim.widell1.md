@@ -1,3 +1,4 @@
+2021-2-15 17.12 Created beginning of a layout for template. GIT is up and running, PSUEDO code in place for assistance in finishing layout.
 2021-2-15 12:43 Daily plan: Create visual representation of webpage design, localize and install additional extensions for VSCode, start on PSUEDO code for HTML and CSS, create GIT project and fill out required details.
 2021-2-15 12.27 Test commit ammend
 2021-2-15 12.27 Test commit amend
