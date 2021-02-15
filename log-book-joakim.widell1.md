@@ -1,2 +1,7 @@
+2021-2-15 12:43 Daily plan: Create visual representation of webpage design, localize and install additional extensions for VSCode, start on PSUEDO code for HTML and CSS, create GIT project and fill out required details.
 2021-2-15 12.27 Test commit ammend
+2021-2-15 12.27 Test commit amend
+2021-2-15 12.27 Test commit
+>>>>>>> 8422bcafe2dff53b39b11fef29f6893018d6878a
+>>>>>>> a0391812de91269be709ac8a6ca632a5c789406e
 2021-2-15 12.21 Recreated log file, will update daily goals once VSCode and git are properly working together
