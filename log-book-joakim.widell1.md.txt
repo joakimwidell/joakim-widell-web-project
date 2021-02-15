@@ -1,2 +1,0 @@
-2021-02-15 kl.11.41 - Daily plan: Create visual representation of webpage design, localize and install additional extensions for VSCode, start on PSUEDO code for HTML and CSS, create GIT project and fill out required details.
-2021-02-15 kl.11.32 - File uploaded
