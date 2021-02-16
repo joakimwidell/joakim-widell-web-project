@@ -1,6 +1,16 @@
 body {
+    margin-top: 0; 
+    padding-top: 0; 
+    margin-bottom: 0; 
+    padding-bottom: 0;
     font-style: italic;
     color: white;
+}
+
+#page-container {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 #my-background {
@@ -11,6 +21,7 @@ body {
     bottom: 0;
     z-index: -1;
     filter: brightness(20%);
+    transform: scale(1);
 }
 
 #title-text {
@@ -40,7 +51,7 @@ body {
     border-radius: 40%;
     border: double;
     border-color: rgb(1, 2, 94);
-    transform: scale(0.7);
+    transform: scale(1);
 }
 
 #box-content-container {
@@ -66,6 +77,12 @@ body {
     height: 50%;
     float: right;
     margin-top: 2em;
+}
+
+#box-credits {
+    font-family: cursive, monospace;
+    
+    bottom: 0;
 }
 
 .dropdown {
@@ -95,4 +112,11 @@ body {
   
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#footer-credits {
+    clear: both;
+    position: absolute;
+    margin-top: 30em;
+    margin-left: 1em;
 }
