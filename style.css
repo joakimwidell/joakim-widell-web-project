@@ -14,30 +14,58 @@ body {
 }
 
 #title-text {
-    font-family: monospace;
+    font-family: fantasy, monospace;
+    font-optical-sizing: initial;
+    font-variant: small-caps;
+    font-size: 4em;
+    color: rgb(0, 109, 103);
 }
 
-#box-container {
-    height: 500px;
-    width: 500px;
+#website-description-left {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+#website-description-right {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
 }
 
 #box-title {
-    background-color: teal;
+    background-color: rgb(61, 8, 15);
     width: 100%;
     height: 5em;
     text-align: center;
     display: table;
-    border-radius: 10%;
+    border-radius: 40%;
     border: double;
     border-color: rgb(1, 2, 94);
+    transform: scale(0.7);
 }
 
-#box-wide-tall {
-    background-color: royalblue;
-    width: 50%;
+#box-content-container {
+    width: 100%;
+    height: 100%;
+    padding: 1em 1em 0 1em;
+    transform: scale(0.7);
+    text-align: center;
+
+}
+
+#box-left-content {
+    background-color: rgba(0, 109, 103, 0.267);
+    width: 40%;
     height: 50%;
     float: left;
+    margin-top: 2em;
+}
+
+#box-right-content {
+    background-color: rgba(0, 109, 103, 0.267);
+    width: 40%;
+    height: 50%;
+    float: right;
+    margin-top: 2em;
 }
 
 .dropdown {
