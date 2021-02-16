@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <video autoplay muted loop id="myVideo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <video autoplay muted loop id="my-background">
         <source src="background-gif.mp4" type="video/mp4">
       </video>
 </head>
 <body>
     <div id="box-title">
         <h1>INSERT TITLE HERE</h1>
-    </div>
-    <div id="box-list-menu">
-        First<br>Second<br>Third<br>Fourth
+        <div class="dropdown">
+            <i class="fa fa-bars"></i>
+            <div class="dropdown-content">
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+            </div>
+        </div>
     </div>
 </body>
