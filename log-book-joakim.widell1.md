@@ -1,4 +1,4 @@
-
+2021-2-16 14.40 Worked on layout, added "about" and "log in" pages. Found API for use.
 2021-2-16 09.29 Daily plan: Resume work on layout, look at API's for content.
 2021-2-15 17.12 Created beginning of a layout for template. GIT is up and running, PSUEDO code in place for assistance in finishing layout.
 2021-2-15 12:43 Daily plan: Create visual representation of webpage design, localize and install additional extensions for VSCode, start on PSUEDO code for HTML and CSS, create GIT project and fill out required details.
