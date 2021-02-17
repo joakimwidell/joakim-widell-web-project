@@ -8,17 +8,28 @@
           </video>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body onload="changeLink()">
+    <body>
         <div id="page-container">
         <div id="box-title">
             <h1 id="title-text">About the creator</h1>
+
+            <script>
+                document.getElementById("dropdown-button-about").formaction = "about-mobile.html";    
+            </script>
+            
             <div class="dropdown">
                 <i class="fa fa-bars fa-2x"></i>
                 <div class="dropdown-content">
                     <ul>
-                        <button id="dropdown-button" onclick="document.location='index.html'">Home</button><br>
-                        <button id="dropdown-button" onclick="document.location='log-in.html'">Log in</button><br>
-                        <button id="dropdown-button-about" onclick="document.location='about.html'">About</button><br>
+                        <form>
+                            <button id="dropdown-button" formaction="index.html">Home</button><br>
+                        </form>
+                        <form>
+                            <button id="dropdown-button" formaction="log-in.html">Log in</button><br>
+                        </form>
+                        <form>
+                            <button id="dropdown-button-about" formaction="about.html">About</button><br>
+                        </form>
                     </ul>
                 </div>
             </div>

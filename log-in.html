@@ -7,23 +7,26 @@
         <source src="background-gif.mp4" type="video/mp4">
         </video>
 </head>
-<body onload="changeLink()">
+<body>
     <div id="page-container">
     <div id="box-title">
         <h1 id="title-text">Log in page</h1>
         <div class="dropdown">
             <i class="fa fa-bars fa-2x"></i>
             <div class="dropdown-content">
-                    <button id="dropdown-button" onclick="document.location='index.html'">Home</button><br>
-                    <button id="dropdown-button" onclick="document.location='log-in.html'">Log in</button><br>
-                    <button id="dropdown-button-about" onclick="document.location='about.html'">About</button><br>                       
+                <a href="index.html" id="dropdown-button">Home</a><br>
+                <a href="log-in.html" id="dropdown-button">Log in</a><br>
+                <a href="about.html" id="dropdown-button-about">About</a><br>                     
             </div>
         </div>
     </div>
     <script>
-        
-        document.getElementById("dropdown-button-about").location = "about-mobile.html";
-        
+      if(window.screen.width <= 800){
+
+        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
+
+      }
+   
     </script>
     <div id="box-content-container">
         <div id="box-log-in-title">
