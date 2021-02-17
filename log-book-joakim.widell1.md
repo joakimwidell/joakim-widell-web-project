@@ -1,4 +1,5 @@
-2021-2-17 11.45 Daily plan: Finalize layout, start working on API functionality. 
+2012-2-17 17.30 Layout mostly done, need to use same template to migrate to mobile devices however. Should be a quick solve with some reformatting. API still not properly connected.
+2021-2-17 11.45 Daily plan: Finalize layout, start working on API functionality.  
 2021-2-16 14.40 Worked on layout, added "about" and "log in" pages. Found API for use.
 2021-2-16 09.29 Daily plan: Resume work on layout, look at API's for content.
 2021-2-15 17.12 Created beginning of a layout for template. GIT is up and running, PSUEDO code in place for assistance in finishing layout.
