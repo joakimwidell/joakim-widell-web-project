@@ -16,10 +16,15 @@
             <div class="dropdown-content">
                     <button id="dropdown-button" onclick="document.location='index.html'">Home</button><br>
                     <button id="dropdown-button" onclick="document.location='log-in.html'">Log in</button><br>
-                    <button id="dropdown-button" onclick="document.location='about.html'">About</button><br>                       
+                    <button id="dropdown-button-about" onclick="document.location='about.html'">About</button><br>                       
             </div>
         </div>
     </div>
+    <script>
+        if(window.innerWidth <= 800 && window.innerHeight <= 600){
+        document.getElementById("dropdown-button-about").location = "about-mobile.html";
+        }
+    </script>
     <div id="box-content-container">
         <div id="box-log-in-title">
             Log in to access the tablatures

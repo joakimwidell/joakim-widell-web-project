@@ -87,7 +87,7 @@ body {
     z-index: 1;
 }
 
-#box-bottom-content-about {
+#box-left-content-about {
     background-color: rgba(0, 0, 0, 0.267);
     width: 40%;
     height: 50%;
@@ -100,7 +100,7 @@ body {
     float: left;
 }
 
-#box-top-content-about {
+#box-right-content-about {
     background-color:rgba(0, 109, 103, 0);
     width: 40%;
     height: 50%;    
@@ -112,7 +112,7 @@ body {
     animation: spinning-picture 10s linear infinite;  
 }
 
-#box-content-about-mobile {
+#box-content-about-mobile-top {
     background-color: rgba(0, 0, 0, 0.267);
     width: 40%;
     height: 50%;
@@ -125,7 +125,7 @@ body {
     float: left;
 }
 
-#box-content-about-mobile {
+#box-content-about-mobile-bottom {
     background-color:rgba(0, 109, 103, 0);
     width: 40%;
     height: 50%;    

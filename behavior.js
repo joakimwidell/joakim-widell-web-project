@@ -5,6 +5,5 @@ function detectMob() {
     }
     return isMobile;
   }
-function detectMob()
-console.log(isMobile);
+
 
