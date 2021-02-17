@@ -118,11 +118,11 @@ body {
     height: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    margin-top: 25%;
     z-index: 1;
     border-radius: 10%;
     font-size: 1em;
-    float: left;
+    
 }
 
 #box-content-about-mobile-bottom {
@@ -131,8 +131,7 @@ body {
     height: 50%;    
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
-    float: right;
+    margin-top: 25%;
     z-index: 1;
     animation: spinning-picture 10s linear infinite;  
 }
@@ -183,6 +182,11 @@ body {
 .dropdown:hover .dropdown-content {
     display: table;
 
+}
+#dropdown-button-about {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
 }
 
 #dropdown-button {

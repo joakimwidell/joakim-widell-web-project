@@ -8,7 +8,7 @@
           </video>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="changeLink()">
         <div id="page-container">
         <div id="box-title">
             <h1 id="title-text">About the creator</h1>
@@ -18,11 +18,17 @@
                     <ul>
                         <button id="dropdown-button" onclick="document.location='index.html'">Home</button><br>
                         <button id="dropdown-button" onclick="document.location='log-in.html'">Log in</button><br>
-                        <button id="dropdown-button" onclick="document.location='about.html'">About</button><br>
+                        <button id="dropdown-button-about" onclick="document.location='about.html'">About</button><br>
                     </ul>
                 </div>
             </div>
         </div>
+        <script>
+            function changeLink(){
+            var findLink = document.getElementById("dropdown-button-about");
+            findlink.href = "about-mobile.html";
+            }
+        </script>
         <div id="box-content-container">
             <h1>Quick introduction</h1>
             <div id="box-right-content-about">

@@ -7,7 +7,7 @@
         <source src="background-gif.mp4" type="video/mp4">
         </video>
 </head>
-<body>
+<body onload="changeLink()">
     <div id="page-container">
     <div id="box-title">
         <h1 id="title-text">Log in page</h1>
@@ -21,9 +21,9 @@
         </div>
     </div>
     <script>
-        if(window.innerWidth <= 800 && window.innerHeight <= 600){
+        
         document.getElementById("dropdown-button-about").location = "about-mobile.html";
-        }
+        
     </script>
     <div id="box-content-container">
         <div id="box-log-in-title">

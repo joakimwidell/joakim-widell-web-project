@@ -5,5 +5,10 @@ function detectMob() {
     }
     return isMobile;
   }
+document.getElementById("dropdown-button-about");
+function extractContent(html) {
 
+    return new DOMParser().parseFromString(html, "index.html") . 
+        documentElement . textContent;
 
+}
