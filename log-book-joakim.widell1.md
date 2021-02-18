@@ -1,3 +1,4 @@
+2012-2-18 09.44 Daily plan: Work on API functionality, potentially find a new one seince the current one relies on built in GUI to work. Clean up layout if time allows. 
 2012-2-17 17.30 Layout mostly done, need to use same template to migrate to mobile devices however. Should be a quick solve with some reformatting. API still not properly connected.
 2021-2-17 11.45 Daily plan: Finalize layout, start working on API functionality.  
 2021-2-16 14.40 Worked on layout, added "about" and "log in" pages. Found API for use.
