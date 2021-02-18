@@ -10,10 +10,10 @@
 <body>
     <div id="page-container">
     <div id="box-title">
-        <h1 id="title-text">Log in page</h1>
+        <h1 id="title-text-mobile">Log in page</h1>
         <div class="dropdown">
-            <i class="fa fa-bars fa-2x"></i>
-            <div class="dropdown-content">
+            <i class="fa fa-bars fa-4x"></i>
+            <div class="dropdown-content-mobile">
                 <a href="index.html" id="dropdown-button-home">Home</a><br>
                 <a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>
                 <a href="about.html" id="dropdown-button-about">About</a><br>                     
@@ -23,26 +23,26 @@
     <script>    
             if(window.screen.width <= 800){
             document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
-            document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
-            document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");         
+            document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html"); 
+            document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");      
             }  
     </script>
     <div id="box-content-container">
-        <div id="box-log-in-title">
+        <div id="box-log-in-title-mobile">
             Log in to access the tablatures
         </div>
         <form action="#">
-            <div id="box-log-in-email">
-                <label for="e-mail-log-in" >
-                    <input type="text" id="e-mail-log-in" placeholder="input email here" autocomplete="off">
+            <div id="box-log-in-email-mobile">
+                <label for="e-mail-log-in-mobile" >
+                    <input type="text" id="e-mail-log-in-mobile" placeholder="input email here" autocomplete="off">
                 </label>
             </div>
-            <div id="box-log-in-password">
-                <label for="password-log-in">
-                    <input type="password" id="password-log-in" placeholder="input password here" autocomplete="off">
+            <div id="box-log-in-password-mobile">
+                <label for="password-log-in-mobile">
+                    <input type="password" id="password-log-in-mobile" placeholder="input password here" autocomplete="off">
                 </label>
             </div><br>
-            <input type="submit" id="log-in-submit" value="Submit">
+            <input type="submit" id="log-in-submit-mobile" value="Submit">
         </form>
     </div>
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
