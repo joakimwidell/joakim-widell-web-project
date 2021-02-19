@@ -1,7 +1,8 @@
 var artistSearch = "";
 var song = "";
 var artistApiUrl = 'http://www.songsterr.com/a/ra/songs/byartists.json?artists=';
-
+var apiData = "";
+var artistURL = "http://www.songsterr.com/a/wa/artist?id=";
 
 function getFormData() {
     artistSearch = document.getElementById('e-mail-log-in').value;
@@ -10,17 +11,18 @@ function getFormData() {
     return artistSearch;
 }
 
-async function getArtist() {
+async function getArtistURL() {
     getFormData();
     artistApiUrl += artistSearch;
     const response = await fetch(artistApiUrl);
-    const apiData = await response.json();
-    console.log(apiData);
+    apiData = await response.json();
+    artistURL += apiData[0].artist.id;
+    console.log(artistURL);
     
 }
 
 /*function parseApiData() {
     getArtist();
-    var songId = apidata[0][0];
-    console.log(songId);
+    var information = apiData[0].title;
+    console.log(information);
 }*/
