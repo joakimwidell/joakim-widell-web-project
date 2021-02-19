@@ -27,7 +27,7 @@
             }
         </script>
     <div id="box-content-container">
-        <form id="search-form" onsubmit="getFormData(); return false;">
+        <form id="search-form" onsubmit="getFormData(); return false; getArtist(); return false;">
             <div id="box-log-in-email">
                 <label for="e-mail-log-in">
                     <input type="text" id="e-mail-log-in" placeholder="input artist name here" autocomplete="off" required>
@@ -39,16 +39,12 @@
                 </label>
             </div><br>
             <input type="submit" id="log-in-submit" value="Search">
+        <script src="behavior.js">     
+            getFormData();
+            getArtist(artistSearch);
+        </script>
         </form>
     </div>
-    <script>
-        function getFormData() {
-            var artist = document.getElementById('e-mail-log-in').value;
-            var song = document.getElementById('password-log-in').value;
-            document.getElementById("test-p").innerHTML = artist + " " + song;
-        }
-        getFormData();
-    </script>
     <div>
         <p id="test-p">
             TEST TEXT
@@ -56,8 +52,5 @@
     </div>
     
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
-
-    <script src="behavior.js"></script>
-    <script>getArtist('Marley');</script>
 
 </body>
