@@ -42,7 +42,7 @@ body {
     font-variant: small-caps;
     font-size: 10em;
     color: rgb(0, 109, 103);
-    transform: scale(1);
+    transform: scale(0.9);
 }
 
 #website-description-left {
@@ -302,7 +302,7 @@ a {
 #box-log-in-title-mobile {
     width: 100%;
     height: 75%;
-    font-size: 8em;
+    font-size: 6em;
     color:rgb(0, 141, 7);
 }
 

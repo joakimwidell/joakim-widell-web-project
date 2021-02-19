@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <video autoplay muted loop id="my-background">
         <source src="background-gif.mp4" type="video/mp4">
-        </video>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </video>
 </head>
 <body>
     <div id="page-container">
         <div id="box-title">
-            <h1 id="title-text">About the creator</h1>
+            <h1 id="title-text">TABLATURES</h1>
             <div class="dropdown">
                 <i class="fa fa-bars fa-2x"></i>
                 <div class="dropdown-content">
@@ -30,17 +27,37 @@
             }
         </script>
     <div id="box-content-container">
-        <h1>Quick introduction</h1>
-        <div id="box-right-content-about">
-            <img id="profilbild-about" src="profilbild.jpg" alt="Joakim Widell">
-        </div>
-            <div id="box-left-content-about">
-                <h1>
-                    Welcome to my site! To give a brief introduction to those whom dont already know me. I was born in 1992 on August 18th, and my interest in technology has been a constant factor in my life. Starting with picking up a SNES controller at a very young age only to fall in love with the seemingly endless possibilities that make up the digital world. Lately my interest has altered a bit and taken more of a scientific form though, now I feel urged to understand the things I have been enjoying my whole life, and ultimately add to them.  
-                </h1>
+        <form id="search-form" onsubmit="getFormData(); return false;">
+            <div id="box-log-in-email">
+                <label for="e-mail-log-in">
+                    <input type="text" id="e-mail-log-in" placeholder="input artist name here" autocomplete="off" required>
+                </label>
             </div>
+            <div id="box-log-in-password">
+                <label for="password-log-in">
+                    <input type="text" id="password-log-in" placeholder="input song name here" autocomplete="off">
+                </label>
+            </div><br>
+            <input type="submit" id="log-in-submit" value="Search">
+        </form>
     </div>
+    <script>
+        function getFormData() {
+            var artist = document.getElementById('e-mail-log-in').value;
+            var song = document.getElementById('password-log-in').value;
+            document.getElementById("test-p").innerHTML = artist + " " + song;
+        }
+        getFormData();
+    </script>
+    <div>
+        <p id="test-p">
+            TEST TEXT
+        </p>
+    </div>
+    
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
-</div>
+
+    <script src="behavior.js"></script>
+    <script>getArtist('Marley');</script>
+
 </body>
-</html>

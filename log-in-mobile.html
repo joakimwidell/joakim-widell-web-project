@@ -9,29 +9,30 @@
 </head>
 <body>
     <div id="page-container">
-    <div id="box-title">
-        <h1 id="title-text-mobile">Log in page</h1>
-        <div class="dropdown">
-            <i class="fa fa-bars fa-4x"></i>
-            <div class="dropdown-content-mobile">
-                <a href="index.html" id="dropdown-button-home">Home</a><br>
-                <a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>
-                <a href="about.html" id="dropdown-button-about">About</a><br>                     
+        <div id="page-container">
+            <div id="box-title">
+                <h1 id="title-text-mobile">Tablatures for music lovers!</h1>
+                <div class="dropdown">
+                    <i class="fa fa-bars fa-4x"></i>
+                    <div class="dropdown-content">
+                        <a href="index.html" id="dropdown-button-home">Home</a><br>
+                        <a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>
+                        <a href="about.html" id="dropdown-button-about">About</a><br>                     
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <script>    
-            if(window.screen.width <= 800){
-            document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
-            document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html"); 
-            document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");      
-            }  
-    </script>
-    <div id="box-content-container">
-        <div id="box-log-in-title-mobile">
+            <script>
+                if(window.screen.width <= 800){
+                  document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
+                  document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
+                  document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");   
+                }   
+              </script>
+            <div id="box-content-container">
+            <div id="box-log-in-title-mobile">
             Log in to access the tablatures
-        </div>
-        <form action="#">
+            </div>
+            <form action="#">
             <div id="box-log-in-email-mobile">
                 <label for="e-mail-log-in-mobile" >
                     <input type="text" id="e-mail-log-in-mobile" placeholder="input email here" autocomplete="off">

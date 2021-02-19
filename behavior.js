@@ -1,7 +1,9 @@
-function checkIfMobie() {
-    if(window.screen.width <= 800){
-        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
-        document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
-        
-    }  
+let artist = "";
+async function getArtist(artist) {
+    let artistApiUrl = 'https://www.songsterr.com/a/ra/songs.json?pattern=' + artist;
+    const response = await fetch(artistApiUrl);
+    const data = await response.json();
+                
+    console.log(data[0].artist.name);
+    
 }
