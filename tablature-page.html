@@ -8,13 +8,14 @@
 <body>
     <div id="page-container">
         <div id="box-title">
-            <h1 id="title-text">TABLATURES</h1>
+            <h1 id="title-text">Artist song list!</h1>
             <div class="dropdown">
-                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-4x"></i>
                 <div class="dropdown-content">
                     <a href="index.html" id="dropdown-button-home">Home</a><br>
                     <a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>
-                    <a href="about.html" id="dropdown-button-about">About</a><br>                     
+                    <a href="about.html" id="dropdown-button-about">About</a><br>
+                    <a href="tablature-page.html" id="dropdown-button-tablature">Tablatures</a><br>                     
                 </div>
             </div>
         </div>
@@ -25,36 +26,42 @@
                 document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
                 document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");                             
             }
-        </script>
+            </script>
+            <script src="behavior.js">
+                getArtistURL();
+            </script>
     <div id="box-content-container">
-        <form id="search-form" onsubmit="getFormData(); return false; getArtistURL(); return false;">
+        <form id="search-form" onsubmit="getInput(); return false; getArtistURL(); return false; writeSongList();">
             <div id="box-log-in-email">
                 <label for="e-mail-log-in">
                     <input type="text" id="e-mail-log-in" placeholder="input artist name here" autocomplete="off" required>
                 </label>
             </div>
-            <div id="box-log-in-password">
+            <!--<div id="box-log-in-password">
                 <label for="password-log-in">
                     <input type="text" id="password-log-in" placeholder="input song name here" autocomplete="off">
                 </label>
-            </div><br>
+            </div><br>-->
             <input type="submit" id="log-in-submit" value="Search">
         
         </form>
     </div>
-    <div>
-        <p id="test-p">
-            TEST TEXT
+    <div id="song-list-div-id">
+        <p id="artist-name-id">
+        test text;
         </p>
+        <ol id="song-list-ol-id">
+        </ol>
     </div>
-    <div id="embedded-site">
-        <script src="behavior.js">
-            getArtistURL();
-        </script>
-        <iframe id ="iframe-id" src="#" style="position:absolute; top:0px; left:0px; 
-        width:100%; height:100%; border: none; overflow: hidden;">
+    
+        <!--<iframe src="#" id="iframe-id" style="visibility: hidden;" onload="this.style.visibility='visible';">
+                    <div>
+                        <script>
+                            window.alert("Unfortunately songsterr has chosen to block X-Frames, meaning i will not be able to display their tabs on my site.");
+                        </script>    
+                    </div>
+        </iframe>-->
         
-        </iframe>
-    </div>
+    
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
 </body>
