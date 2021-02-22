@@ -1,3 +1,4 @@
+2021-2-22 09.34 Daily plan: Integrate API fully, work on alternate solutions for a better looking layout.
 2021-2-19 10.39 Daily plan: Revise if current API is actually usable since it requires standalone graphics to operate as intended. Will stick with it if embedding is plausible. Otherwise will move on to another subject.
 2021-2-19 10.38 Summary of yesterday: Ran into issues with API functionality, in doing so forgot to update logbook. Have now managed to import data from said API and project is progressing.
 2021-2-18 09.44 Daily plan: Work on API functionality, potentially find a new one seince the current one relies on built in GUI to work. Clean up layout if time allows. 
