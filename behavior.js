@@ -5,6 +5,8 @@ var apiData = "";
 var artistURL = "http://www.songsterr.com/a/wa/artist?id=";
 var songList = [];
 
+
+
 function getInput() {
     artistSearch = document.getElementById('e-mail-log-in').value;
     //song = document.getElementById('password-log-in').value;
@@ -25,8 +27,10 @@ async function getArtistURL() {
 }
 
 async function getSongList() {
+    
     getInput();
     getArtistURL();
+    document.getElementById("song-list-ol-id").innerHTML = "";
     //artistApiUrl += artistSearch;
     const response = await fetch(artistApiUrl);
     apiData = await response.json();
@@ -37,9 +41,9 @@ async function getSongList() {
         document.getElementById("song-list-ol-id").innerHTML += "<li id='song-list-id'>" + songList[i] + "</li><br>"; 
     }   
     artistApiUrl = "http://www.songsterr.com/a/ra/songs/byartists.json?artists=";
-    
-    
+    songList = [];
 };
+
 
 
 
