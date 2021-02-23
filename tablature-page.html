@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <video autoplay muted loop id="my-background">
         <source src="background-gif.mp4" type="video/mp4">
     </video>
     <script src="behavior.js"></script>
+
 </head>
 <body>
     <div id="page-container">
@@ -19,47 +21,56 @@
                     <a href="tablature-page.html" id="dropdown-button-tablature">Tablatures</a><br>                     
                 </div>
             </div>
+            
         </div>
         <script>
             if(window.screen.width <= 800){
-                
                 document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
                 document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
                 document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");                             
             }
         </script>
-    <div id="box-content-container">
+    
+    <div id="box-with-search">
         <form id="search-form" onsubmit="getSongList(); return false;">
-            <div id="box-log-in-email">
-                <label for="e-mail-log-in">
-                    <input type="text" id="e-mail-log-in" placeholder="input artist name here" autocomplete="off" required>
+            <div id="box-search-artist">
+                <label for="search-artist">
+                    <input type="text" id="search-artist" placeholder="input artist name here" autocomplete="off" required>
                 </label>
             </div>
-            <!--<div id="box-log-in-password">
-                <label for="password-log-in">
-                    <input type="text" id="password-log-in" placeholder="input song name here" autocomplete="off">
-                </label>
-            </div><br>-->
-            <input type="submit" id="log-in-submit" value="Search">
+            <input type="submit" id="search-submit" value="Search">
         </form>
-        
+        <i id="fa-music" class="fa fa-music fa-4x"></i>
+        <i id="fa-music" class="fa fa-music fa-4x"></i>
+        <i id="fa-music" class="fa fa-music fa-4x"></i>
+        <i id="fa-music" class="fa fa-music fa-4x"></i>
+
     </div>
+        
+    
     <div id="song-list-div-id">
         <p id="artist-name-id">
-        test text;
         </p>
         <ol id="song-list-ol-id">
         </ol>
     </div>
     
-        <!--<iframe src="#" id="iframe-id" style="visibility: hidden;" onload="this.style.visibility='visible';">
-                    <div>
-                        <script>
-                            window.alert("Unfortunately songsterr has chosen to block X-Frames, meaning i will not be able to display their tabs on my site.");
-                        </script>    
-                    </div>
-        </iframe>-->
-        
+    
     
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
 </body>
+
+
+
+
+
+
+
+<!-- X-frames not allowed on my API. Keeping code for example purpose.
+    <iframe src="#" id="iframe-id" style="visibility: hidden;" onload="this.style.visibility='visible';">
+            <div>
+                <script>
+                    window.alert("Unfortunately songsterr has chosen to block X-Frames, meaning i will not be able to display their tabs on my site.");
+                </script>    
+            </div>
+</iframe>-->

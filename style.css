@@ -3,9 +3,12 @@ body {
     padding-top: 0; 
     margin-bottom: 0; 
     padding-bottom: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     font-style: italic;
     color: white;
     font-size: 1vw;
+    overflow: hidden;
+    
     
 }
 
@@ -13,7 +16,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     position: relative;
-    
+        
 }
 
 #my-background {
@@ -27,13 +30,18 @@ body {
     transform: scale(1);
 }
 
+.fa {
+    color: black;
+}
+
 #title-text {
-    font-family: fantasy, monospace;
+
     font-optical-sizing: initial;
     font-variant: small-caps;
-    font-size: 4em;
+    font-size: 5em;
     color: rgb(0, 109, 103);
     transform: scale(1);
+    margin: 0.5em auto auto auto;
 }
 
 #title-text-mobile {
@@ -57,15 +65,18 @@ body {
 }
 
 #box-title {
-    background-color: rgb(61, 8, 15);
     width: 100%;
-    height: 5em;
+    height: 4em;
     text-align: center;
     display: table;
-    border-radius: 40%;
     border: double;
     border-color: rgb(1, 2, 94);
-    transform: scale(1);
+    border-radius: 5%;
+    transform: scale(0.7);
+    background-image: url('checkerboard-cross.png');
+    filter: brightness(60%);
+    
+    
 }
 
 #box-content-container {
@@ -262,12 +273,38 @@ a {
 }
 
 /*Log in attributes */
+#box-with-search {
+    float: left;
+    margin-left: 5em;
+    margin-top: 2em;
+}
 
 #box-log-in-title {
     width: 100%;
     height: 50%;
     font-size: 3em;
     color:rgb(0, 141, 7)
+}
+
+#box-search-artist {
+    width: 100%;
+    height: 50%;
+    margin-top: 5em;
+    
+}
+
+#search-artist {
+    height: 2em;
+    font-size: 1.5em;
+    border-style: ridge;
+    border-width: 0.2em;
+}
+#search-submit {
+    margin-top: 1em;
+    font-size: 2em;
+    border-style: ridge;
+    border-width: 0.2em;
+    margin-left: 2em;
 }
 
 #box-log-in-email {
@@ -351,18 +388,65 @@ a {
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-width: 100%;
-    max-height: 40em;
-    width: auto;
+    max-width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
 }
+
 
 #song-list-ol-id {
     display: flex;
     flex-wrap: wrap;
     max-height: 40em;
+    list-style-position: inside;
 }
 
 #song-list-id {
     margin: 1em;
 }
-  
+
+#artist-name-id {
+    margin: 0.2em auto 0em auto;
+    font-size: 4em;
+    font-family: cursive, monospace;
+    font-weight: bold;   
+    text-transform: capitalize;
+}
+
+#link-list-id {
+    z-index: 3;
+}
+
+#link-list-id:link {
+    z-index: 3;
+    text-decoration: none;
+    color: white;
+}
+
+#link-list-id:visited {
+    text-decoration: none;
+    color: gold;
+}
+
+#link-list-id:hover {
+    font-size: larger;
+    z-index: 4;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
+
+#fa-music {
+    margin-top: 1em;
+    margin-left: 35%;
+    color:rgb(85, 85, 109);
+}
+
+#click-song-info {
+    
+}
