@@ -1,3 +1,4 @@
+2021-2-23 16.48 Summary: Still working on tweaking layout, functionality is finalized and working properly.
 2021-2-23 10:38 Daily plan: Fine tuning of graphical elements. Improve the layout for a better feel.
 2021-2-23 08:37 Summary of yesterday: API has been integrated, modifying the graphical and funtion layout is still not finished. 
 2021-2-22 09.34 Daily plan: Integrate API fully, work on alternate solutions for a better looking layout.
