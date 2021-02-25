@@ -15,6 +15,11 @@ function checkIfMobile() {
         document.getElementById("dropdown-button-tablature").setAttribute("href", "tablature-page-mobile.html");
         //document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");
     }
+    var i = 0;
+    while(i = 0) {
+        location.reload();
+        i++;
+    }
 }
 
 function getInput() {

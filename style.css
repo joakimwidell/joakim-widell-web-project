@@ -156,8 +156,22 @@ body {
     margin-top: 15%;
     z-index: 1;
     font-size: 2em;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
 }
 
+#box-bottom-content-home {
+    
+    width: 90%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    z-index: 1;
+    font-size: 2em;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+}
 
 #box-left-content-about {
     background-color: rgba(0, 0, 0, 0.267);
@@ -188,14 +202,14 @@ body {
 
 #box-content-about-mobile-top {
     background-color: rgba(0, 0, 0, 0.267);
-    width: 40%;
+    width: 100%;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 15%;
     z-index: 1;
     border-radius: 10%;
-    font-size: 1em;
+    font-size: 2em;
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
     
