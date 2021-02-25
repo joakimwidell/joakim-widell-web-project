@@ -1,3 +1,5 @@
+2021-2-25 08.41 Daily plan: Improvements on mobile compatibility.  
+2021-2-25 08.40 Got no work done yesterday due to family matters, will catch up on whatever was missed and finish up project today/tomorrow within the expected timeframe however.
 2021-2-23 16.48 Summary: Still working on tweaking layout, functionality is finalized and working properly.
 2021-2-23 10:38 Daily plan: Fine tuning of graphical elements. Improve the layout for a better feel.
 2021-2-23 08:37 Summary of yesterday: API has been integrated, modifying the graphical and funtion layout is still not finished. 

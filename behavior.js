@@ -52,6 +52,14 @@ async function getSongList() {
     window.alert("Click on a song to get the tablatures on Songsterr.com. (You will be redirected)")
 };
 
+function checkIfMobile() {
+    if(window.screen.width <= 800) {
+        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
+        document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
+        document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");   
+    }   
+}
+
 
 
 //LEFTOVER FUNCTIONS BELOW

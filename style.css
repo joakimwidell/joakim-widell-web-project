@@ -7,12 +7,20 @@ body {
     font-style: italic;
     color: white;
     font-size: 1vw;
-    overflow: hidden;
+    overflow: scroll;
     
     
 }
 
 #page-container {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.438);
+        
+}
+
+#page-container-mobile {
     min-width: 100%;
     min-height: 100%;
     position: relative;
@@ -45,23 +53,11 @@ body {
 }
 
 #title-text-mobile {
-    font-family: fantasy, monospace;
     font-optical-sizing: initial;
     font-variant: small-caps;
     font-size: 10em;
     color: rgb(0, 109, 103);
-    transform: scale(0.9);
-}
-
-#website-description-left {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1em;
     transform: scale(1);
-}
-
-#website-description-right {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1em;
 }
 
 #box-title {
@@ -85,46 +81,67 @@ body {
     padding: 1em 1em 0 1em;
     transform: scale(0.9);
     text-align: center;
-    z-index: 1;
+    z-index: -2;
 
 }
 
+#box-content-container-mobile {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0;
+    margin-bottom: 1em;
+    transform: scale(0.9);
+    text-align: center;
+    z-index: 1;
+}
+
 #box-left-content {
-    background-color: rgba(0, 109, 103, 0.267);
     width: 40%;
     height: 50%;
     float: left;
     margin-top: 2em;
     z-index: 1;
+    text-align: left;
+    word-wrap: break-word;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
 }
 
 #box-right-content {
-    background-color: rgba(0, 109, 103, 0.267);
     width: 40%;
     height: 50%;
     float: right;
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-right: 2em;
     z-index: 1;
+    border-radius: 20%;
+    word-wrap: break-word;
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
 }
-
+    
 #box-top-content {
-    background-color: rgba(0, 109, 103, 0.267);
-    width: 60%;
+    
+    width: 90%;
     height: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     z-index: 1;
+    font-size: 2em;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
 }
 
 #box-bottom-content {
-    background-color: rgba(0, 109, 103, 0.267);
-    width: 60%;
+    
+    width: 90%;
     height: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
     z-index: 1;
+    font-size: 2em;
 }
 
 
@@ -139,6 +156,8 @@ body {
     border-radius: 10%;
     font-size: 1em;
     float: left;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
 }
 
 #box-right-content-about {
@@ -163,6 +182,8 @@ body {
     z-index: 1;
     border-radius: 10%;
     font-size: 1em;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
     
 }
 
@@ -190,6 +211,8 @@ body {
     bottom: 0;
 }
 
+/*DROPDOWN MENU*/
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -212,7 +235,6 @@ body {
     color:rgb(0, 109, 103);
     
 }
-
 
 .dropdown-content ul {
     color: black;
@@ -250,6 +272,69 @@ body {
     height: 100%;
     font-size: 2em;
 }
+
+/* DROPDOWN FOR MOBILE SECTION */
+
+.dropdown-mobile {
+    display: inline-block;
+    position: relative;
+    right: 50%;
+    margin-right: -100px;
+    top: -40%;
+    transform: scale(0.7);
+    
+    
+}
+  
+.dropdown-content-mobile {
+    
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 15em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    color:rgb(0, 109, 103);
+    
+}
+
+.dropdown-content-mobile ul {
+    color: black;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    
+}
+  
+.dropdown-mobile:hover .dropdown-content {
+    display: table;
+
+}
+#dropdown-button-about-mobile {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+
+#dropdown-button-home-mobile {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+
+#dropdown-button-log-in-mobile {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+
+}
+#dropdown-button-tablature-mobile {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+
 a {
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
@@ -384,6 +469,8 @@ a {
     border-width: 0.2em;
 }
 
+
+/*SEARCH FUNCTIONS*/
 #song-list-div-id {
     display: flex;
     flex-wrap: wrap;
@@ -447,6 +534,27 @@ a {
     color:rgb(85, 85, 109);
 }
 
-#click-song-info {
-    
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }

@@ -6,36 +6,28 @@
     <video autoplay muted loop id="my-background">
         <source src="background-gif.mp4" type="video/mp4">
       </video>
+      <script src="behavior.js"></script>
 </head>
-<body>
+<body onload="checkIfMobile();">
     <div id="page-container">
     <div id="box-title">
-        <h1 id="title-text-mobile">Tablatures for music lovers!</h1>
+        <h1 id="title-text-mobile">Tablatures</h1>
         <div class="dropdown">
             <i class="fa fa-bars fa-4x"></i>
             <div class="dropdown-content">
                 <a href="index.html" id="dropdown-button-home">Home</a><br>
-                <a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>
+                <!--<a href="log-in.html" id="dropdown-button-log-in">Log in</a><br>-->
                 <a href="about.html" id="dropdown-button-about">About</a><br>  
                 <a href="tablature-page.html" id="dropdown-button-tablature">Tablatures</a><br>                     
             </div>
         </div>
     </div>
-    <script>
-      if(window.screen.width <= 800){
-        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
-        document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
-        document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");   
-      }   
-    </script>
-    <div id="box-content-container">
+    <div id="box-content-container-mobile">
         <h1>CONTENT</h1>
         <div id="box-top-content">
-            <h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h1>
-        </div>
+            <h1>On the page you will find a function calling to an API provided by Songsterr.com. At first my intention was to use their API perform a search that returns data needed to direct you to the correct tablature page. After the search was completed my intention was to use an IFrame to reflect the content found on this page. This was just not possible though. There was an "x-frame deny" clause in the webpage itself, meaning that embedding the graphical elements couldn't be done, at least not in any way I could figure out aside from recreating the whole thing myself.</h1></div>
         <div id="box-bottom-content">
-            <h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h1>
-        </div>
+            <h1>So the solution I finally landed on was to create a search function that instead links to their website, not really a useful function since the page just becomes a very limited search engine. But the search function itself does rely entirely on using an API in order to fetch the proper information needed for creating my elements. With the API I retreive details about the songs/artists that makes it possible to firstly: Create a list with the artists containing their songs that have a tablature available on the site, and secondly: to make the list elements into links that can redirect you directly to the tablatures.</h1></div>
     </div>
     <footer id="footer-credits">Copyright © Joakim Widell™</footer>
 </div>
