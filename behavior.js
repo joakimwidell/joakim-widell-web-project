@@ -1,8 +1,8 @@
 var artistSearch = "";
 var song = "";
-var artistApiUrl = 'http://www.songsterr.com/a/ra/songs/byartists.json?artists=';
+var artistApiUrl = 'https://www.songsterr.com/a/ra/songs/byartists.json?artists=';
 var apiData = "";
-var artistURL = "http://www.songsterr.com/a/wa/artist?id=";
+var artistURL = "https://www.songsterr.com/a/wa/artist?id=";
 var songList = [];
 var idList = [];
 var artistSearchFixed = "";
@@ -26,7 +26,7 @@ async function getArtistURL() {
     const response = await fetch(artistApiUrl);
     apiData = await response.json();
     artistURL += apiData[0].artist.id;
-    artistURL = "http://www.songsterr.com/a/wa/artist?id=";
+    artistURL = "https://www.songsterr.com/a/wa/artist?id=";
 }
 
 async function getSongList() {
@@ -44,9 +44,9 @@ async function getSongList() {
         idList.push(apiData[i].id);
     }
     for(var i = 0; i < songList.length; i++) {
-        document.getElementById("song-list-ol-id").innerHTML += "<a id='link-list-id' href=http://www.songsterr.com/a/wa/song?id=" + idList[i] +  "><li id='song-list-id'>" + songList[i] + "</li></a><br>"; 
+        document.getElementById("song-list-ol-id").innerHTML += "<a id='link-list-id' href=https://www.songsterr.com/a/wa/song?id=" + idList[i] +  "><li id='song-list-id'>" + songList[i] + "</li></a><br>"; 
     }   
-    artistApiUrl = "http://www.songsterr.com/a/ra/songs/byartists.json?artists=";
+    artistApiUrl = "https://www.songsterr.com/a/ra/songs/byartists.json?artists=";
     songList = [];
     idList = [];
     window.alert("Click on a song to get the tablatures on Songsterr.com. (You will be redirected)")
