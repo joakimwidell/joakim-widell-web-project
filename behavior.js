@@ -7,9 +7,30 @@ var songList = [];
 var idList = [];
 var artistSearchFixed = "";
 
+function checkIfMobile() {
+    if(window.screen.width <= 800) {
+        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
+        document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
+        document.getElementById("dropdown-button-tablature").setAttribute("href", "tablature-page-mobile.html");   
+        document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");
+    }   
+}
 
 function getInput() {
     artistSearch = document.getElementById('search-artist').value;
+    if(artistSearch.indexOf(' ') !== -1) {
+        artistSearch = '"' + artistSearch + '"';
+        artistSearchFixed = artistSearch.replace(/"|'/g, "");
+    } else {
+        artistSearchFixed = artistSearch;
+    }
+    
+    document.getElementById("artist-name-id").innerHTML = artistSearchFixed;
+return artistSearch;
+}
+
+function getInputMobile() {
+    artistSearch = document.getElementById('search-artist-mobile').value;
     if(artistSearch.indexOf(' ') !== -1) {
         artistSearch = '"' + artistSearch + '"';
         artistSearchFixed = artistSearch.replace(/"|'/g, "");
@@ -52,13 +73,30 @@ async function getSongList() {
     window.alert("Click on a song to get the tablatures on Songsterr.com. (You will be redirected)")
 };
 
-function checkIfMobile() {
-    if(window.screen.width <= 800) {
-        document.getElementById("dropdown-button-about").setAttribute("href", "about-mobile.html");
-        document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
-        document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");   
+async function getSongListMobile() {
+    
+    getInputMobile();
+    getArtistURL();
+    document.getElementById("song-list-ol-id").innerHTML = "";
+    //artistApiUrl += artistSearch;
+    const response = await fetch(artistApiUrl);
+    apiData = await response.json();
+    for(var i = 1; i < apiData.length; i++) {
+        songList.push(apiData[i].title);
+    } 
+    for(var i = 0; i < apiData.length; i++) {
+        idList.push(apiData[i].id);
+    }
+    for(var i = 0; i < songList.length; i++) {
+        document.getElementById("song-list-ol-id").innerHTML += "<a id='link-list-id' href=https://www.songsterr.com/a/wa/song?id=" + idList[i] +  "><li id='song-list-id'>" + songList[i] + "</li></a><br>"; 
     }   
-}
+    artistApiUrl = "https://www.songsterr.com/a/ra/songs/byartists.json?artists=";
+    songList = [];
+    idList = [];
+    window.alert("Click on a song to get the tablatures on Songsterr.com. (You will be redirected)")
+};
+
+
 
 
 

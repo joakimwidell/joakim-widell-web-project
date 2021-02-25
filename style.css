@@ -118,6 +118,7 @@ body {
     word-wrap: break-word;
     animation: fadeIn ease 20s;
     -webkit-animation: fadeIn ease 20s;
+    
 }
     
 #box-top-content {
@@ -342,6 +343,10 @@ a {
     font-weight: bold;
 }
 
+a:visited {
+    color: gold;
+}
+
 #footer-credits {
     position: fixed;
     left: 0;
@@ -363,7 +368,12 @@ a {
     margin-left: 5em;
     margin-top: 2em;
 }
+#box-with-search-mobile {
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 6em;
 
+}
 #box-log-in-title {
     width: 100%;
     height: 50%;
@@ -378,18 +388,40 @@ a {
     
 }
 
+#box-search-artist-mobile {
+    width: 100%;
+    height: 50%;
+    margin-top: 5em;
+}
+
 #search-artist {
     height: 2em;
     font-size: 1.5em;
     border-style: ridge;
     border-width: 0.2em;
 }
+
+#search-artist-mobile {
+    height: 4em;
+    font-size: 3em;
+    border-style: ridge;
+    border-width: 0.2em;
+}
+
 #search-submit {
     margin-top: 1em;
     font-size: 2em;
     border-style: ridge;
     border-width: 0.2em;
     margin-left: 2em;
+}
+
+#search-submit-mobile {
+    margin-top: 1em;
+    font-size: 4em;
+    border-style: ridge;
+    border-width: 0.2em;
+    
 }
 
 #box-log-in-email {
@@ -480,6 +512,18 @@ a {
     margin-left: auto;
     margin-right: auto;
     float: right;
+}
+#song-list-div-id-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-width: 90%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    
 }
 
 
