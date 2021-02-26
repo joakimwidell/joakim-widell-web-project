@@ -1,3 +1,6 @@
+2021-2-26 Daily plan: Record presentation and attempt to find a fix for non-refreshing HTML. It might be a problem thats hard coded at this point, which means I wont have a possiblity to fix it before the deadline.
+2021-2-26 Project on GITHUB seems to have vanished, can see at least one of the previous activities in my issues but I am getting a 404 error when I click the link for it. See files ProjectGone + ProjectGone2 for verification. I will be posting a new project with roughly the same content as the previous one as a placeholder for the final hand-in on the assignment.
+2021-2-25 19.51 Summary: Worked out layout, still have not found a solution for automatic HTML code swap. Requires a reload in order to swap into mobile version.
 2021-2-25 08.41 Daily plan: Improvements on mobile compatibility.  
 2021-2-25 08.40 Got no work done yesterday due to family matters, will catch up on whatever was missed and finish up project today/tomorrow within the expected timeframe however.
 2021-2-23 16.48 Summary: Still working on tweaking layout, functionality is finalized and working properly.

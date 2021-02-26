@@ -14,12 +14,34 @@ function checkIfMobile() {
         document.getElementById("dropdown-button-home").setAttribute("href", "index-mobile.html");
         document.getElementById("dropdown-button-tablature").setAttribute("href", "tablature-page-mobile.html");
         //document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");
+
+        /*if(document.getElementById("dropdown-button-home").href == "index-mobile.html" && indexBool == false){
+        window.location.href = "index-mobile.html";
+        }
+        else if(document.getElementById("dropdown-button-about").href == "about-mobile.html" && about == false){
+            window.location.href = "about-mobile.html";
+        }
+        else if (document.getElementById("dropdown-button-tablature").href == "tablature-page-mobile.html" && tabsBool == false) {
+            window.location.href = "tablature-page-mobile.html";
+        }     
     }
-    var i = 0;
-    while(i = 0) {
-        location.reload();
-        i++;
+    if(window.screen.width >= 800) {
+        document.getElementById("dropdown-button-about").setAttribute("href", "about.html");
+        document.getElementById("dropdown-button-home").setAttribute("href", "index.html");
+        document.getElementById("dropdown-button-tablature").setAttribute("href", "tablature-page.html");
+        //document.getElementById("dropdown-button-log-in").setAttribute("href", "log-in-mobile.html");
+
+        if(document.getElementById("dropdown-button-home").href == "index.html" && indexBoolMobile == false){
+            window.location.href = "index.html";
+        }
+        else if(document.getElementById("dropdown-button-about").href == "about.html" && aboutMobile == false){
+            window.location.href = "about.html";
+        }
+        else if (document.getElementById("dropdown-button-tablature").href == "tablature-page.html" && tabsBoolMobile == false) {
+            window.location.href = "tablature-page.html";
+        } */    
     }
+    
 }
 
 function getInput() {
